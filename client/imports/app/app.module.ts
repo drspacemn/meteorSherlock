@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
-import { DemoDataService } from './demo/demo-data.service';
+import { FormsModule } from '@angular/forms';
+
+import { PartiesFormComponent } from './parties/parties-form.component';
 
 @NgModule({
   // Components, Pipes, Directive
   declarations: [
     AppComponent,
-    DemoComponent
-  ],
+    PartiesFormComponent
+    ],
   // Entry Components
   entryComponents: [
     AppComponent
   ],
   // Providers
-  providers: [
-    DemoDataService
-  ],
+  providers: [],
   // Modules
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   // Main Component
   bootstrap: [ AppComponent ]

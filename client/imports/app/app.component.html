@@ -1,4 +1,10 @@
 <div>
-    <h1>Hello Angular2-Meteor!</h1>
-    <demo></demo>
+    <parties-form></parties-form>
+    <ul>
+        <li *ngFor="let party of parties | async">
+            {{party.name}}
+            <p>{{party.description}}</p>
+            <p>{{party.location}}</p>
+        </li>
+    </ul>
 </div>
